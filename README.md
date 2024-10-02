@@ -1,6 +1,6 @@
 # Kannada OCR - Optical Character Recognition for Kannada Text
 
-**Author:** Sabari K  
+**Author:** Sabari K, Abraham, Deepak
 **Hackathon:** Freethought Labs & Christ University  
 **Date:** 2nd October 2024  
 
