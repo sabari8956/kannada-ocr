@@ -5,6 +5,7 @@ from pre_processing import preprocess_image
 from ocr import extractText_easyOCR, extractText_tesseract
 from llm_openai import process_image_and_text
 import os
+import sys
 
 def main():
     """
@@ -13,7 +14,7 @@ def main():
     """
     
     # Define the file name of the PDF to process
-    FILE_NAME = "docs/book-small.pdf"
+    FILE_NAME = sys.argv[1]
     # Base directory for storing images
     BASE_DIR = "images"
     # Construct output directory based on the PDF file name

@@ -1,32 +1,42 @@
 # Kannada OCR - Optical Character Recognition for Kannada Text
 
-**Author:** Sabari K, Abraham, Deepak
+**Authors:** Sabari K, Abraham, Deepak  
 **Hackathon:** Freethought Labs & Christ University  
 **Date:** 2nd October 2024  
 
 ## Project Overview
-This project is a **Kannada OCR (Optical Character Recognition)** system designed to recognize and convert Kannada text into machine-encoded text. The aim is to improve the accuracy of OCR models for Kannada scripts by leveraging modern image processing and deep learning techniques.
-
-## How to Run the Project
+This project is a **Kannada OCR (Optical Character Recognition)** system designed to recognize and convert Kannada text into machine-encoded text. The aim is to enhance the accuracy of OCR models for Kannada scripts by leveraging modern image processing and deep learning techniques.
 
 ### Prerequisites
-- **Install Python 3.8+**
-- **Install Tesseract OCR:**
+- **Python 3.8+**: Ensure you have Python installed. You can download it from [python.org](https://www.python.org/downloads/).
+- **Tesseract OCR**: Install Tesseract OCR for text recognition.
   - On Ubuntu:
     ```bash
     sudo apt-get install tesseract-ocr
     ```
+- **Clone the Repository**: Use the following command to clone the repository:
+    ```bash
+    git clone https://github.com/sabari8956/kannada-ocr.git
+    ```
 
-### Clone the Repository
+- **Environment Variables**: Create a `.env` file in the root directory with the following content:
+    ```plaintext
+    OPENAI_API_KEY=<your key>
+    OPENAI_API_ENDPOINT=<your endpoint>
+    ```
 
-### Upload Files
-- Upload files to the `docs/` folder.
-- Change `FILE_NAME` in `main.py`.
+### Run the Project
+    ``` python main.py docs/book.pdf ```
 
-## Future Improvements
-- Improve recognition accuracy by training on larger datasets.
-- Add a GUI for easy user interaction.
-- Support multi-language OCR for mixed content documents.
+## How it works
+
+![image](.github/working.jpeg)
+
+
+
+## Future Improvements 
+- Enhance recognition accuracy by training on larger datasets.
+- Develop a GUI for improved user interaction. (Currently in progress.)
 
 ### Contribution Guidelines
 Contributions are welcome! Feel free to raise issues or submit pull requests to improve the system.
